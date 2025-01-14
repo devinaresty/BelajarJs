@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>BOM JS</title>
+    </head>
+    <body>
+        <h1>CONTOH BOM JS</h1>
+        <button id="showUrl">TAMPILKAN URL</button>
+        <button id="goToGoogle">TAMPILKAN IG</button>
+
+        <script>
+            //mengakses objek bom
+            const showUrlButton= document.getElementById("showUrl");
+            const goToGoogleButton= document.getElementById("goToGoogle");
+
+            //mengakses url
+            showUrlButton.addEventListener("click", ()=>{
+                arlet("Current URL :" + window.location.href);
+            });
+
+            //menampilkan halaman google
+            goToGoogleButton.addEventListener("click", ()=>{
+                window.location.href = "https://instagram.com/d.vinrtty";
+            });
+        </script>
+    </body>
+</html>
